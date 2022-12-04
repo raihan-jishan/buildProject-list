@@ -1,0 +1,133 @@
+/* 
+ title: main style file 
+  description: for js practise file for style main . 
+  date: 22 / 10 / 2022 
+  mood:    📕 
+
+*/
+/*  import font familys  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --activeGreen: #2dbf64;
+  --fontPrimary: #002333;
+  --questionBG: #e4e8ee;
+  --successGreen: #00ff84;
+  --newGreen: #1dd881;
+  --bodyBackground: #f2f4f8;
+  --smartYellow: #ffc916;
+  --smartBlue: #0070f3;
+  --purpule: #728fce;
+}
+/* Gloval object  */
+.Title {
+  text-align: center;
+  margin: 20px;
+  font-size: 1.4rem;
+}
+.Title p{
+  display: flex;
+  background: rgba(117, 117, 117, 0.034); 
+  font-weight: 400;
+}
+/*  Merkup  */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f6f6f6;
+  padding: 12px;
+}
+/*  row */
+.row {
+  margin-left: 1rem;
+  background: rgba(173, 173, 173, 0.678);
+  padding: 20px 40px;
+  border-radius: 1rem;
+  color: rgb(0, 0, 0);
+}
+/*  row Hover */
+.row:hover{
+  cursor: pointer;
+  opacity: 0.9;
+  transition: 0.2s;
+}
+/*  A C T I V E class if === 'complete' : background = 'green' */
+.active{
+  background: var(--activeGreen);
+  opacity: 0.9;
+  
+}
+.active a{
+  color: var(--fontPrimary);
+  /* text-decoration: underline; */
+}
+/* fa-check */
+.fa-check{
+  border-radius: 0.8rem;
+  background: #f6f6f62a;
+  padding: 3px;
+}
+
+
+/*  Responsibe design */
+@media screen and (max-width:700px) {
+ .container{
+   flex-direction: column;
+   
+  }
+  .row{
+   width: 80%;
+    margin: 12px auto;
+ }
+}
+/*  if (max-width: 700 +): doing something*/
+@media screen and (max-width: 701px){
+  .container{
+    flex-direction: column;
+  }
+  .row{
+    width: 80%;
+    margin: 10px auto;
+  }
+    
+}
+/*  360px width  */
+@media screen and (max-width: 360px) {
+  .row{
+    width: 78%;
+    margin: 3px auto;
+  }
+  
+}
+/*  801 px width problem solving */
+@media screen  and (max-width:850px){
+  .container{
+    flex-direction: column;
+  }
+  .row{
+    width: 80%;
+    margin: 10px auto;
+  }
+}
+/*  901 px width problem solving */
+@media screen  and (max-width:950px){
+  .container{
+    flex-direction: column;
+  }
+  .row{
+    width: 80%;
+    margin: 10px auto;
+  }
+}
